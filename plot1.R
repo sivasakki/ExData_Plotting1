@@ -14,7 +14,7 @@ dataWithinPeriod <- subset(data, subset=(Date >= "2007-02-01" & Date <= "2007-02
 dateTime <- paste(as.Date(dataWithinPeriod$Date), dataWithinPeriod$Time)
 dataWithinPeriod$DateTime <- as.POSIXct(dateTime)
 
-##Making Plots
+##Making Plots 
 
 #Histogram of Global_active_power
 hist(dataWithinPeriod$Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", ylab="Frequency", col="Red")
